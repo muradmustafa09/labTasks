@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MY CV</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <button id="editToggleBtn" class="editToggleBtn">Edit</button>
+
+  <div class="cvContainer">
+    <div class="cvSidebar">
+      <img src="images/profile.jpg" alt="" class="cvProfilePicture"/>
+
+      <div class="cvLeftAccordion">
+        <div class="cvAccordionItem">
+          <button class="cvAccordionButton">
+            <img src="images/contact.png" alt="" class="cvButtonIcon"> CONTACT
+          </button>
+          <div class="cvAccordionPanel" id="contactPanel">
+          </div>
+        </div>
+
+        <div class="cvAccordionItem">
+          <button class="cvAccordionButton">
+            <img src="images/social-media.png" alt="" class="cvButtonIcon"> SOCIAL MEDIA
+          </button>
+          <div class="cvAccordionPanel" id="socialMediaPanel">
+          </div>
+        </div>
+
+        <div class="cvAccordionItem">
+          <button class="cvAccordionButton">
+            <img src="images/education.png" alt="" class="cvButtonIcon"> EDUCATION
+          </button>
+          <div class="cvAccordionPanel" id="educationPanel">
+          </div>
+        </div>
+
+        <div class="cvAccordionItem">
+          <button class="cvAccordionButton">
+            <img src="./images/skills.png" alt="" class="cvButtonIcon"> SKILLS
+          </button>
+          <div class="cvAccordionPanel" id="skillsPanel">
+          </div>
+        </div>
+
+        <div class="cvAccordionItem">
+          <button class="cvAccordionButton">
+            <img src="images/languages.png" alt="" class="cvButtonIcon"> LANGUAGES
+          </button>
+          <div class="cvAccordionPanel" id="languagesPanel">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cvMainContent">
+      <h1 id="userName">MURAD <span class="cvHighlight">MUSTAFAZADƏ</span></h1>
+      <h3 id="userTitle">STUDENT</h3>
+      <hr class="cvTitleLine"/>
+
+      <div class="cvRightAccordion">
+        <div class="cvAccordionItem">
+          <button class="cvAccordionButton">
+            <img src="images/profile.png" alt="" class="cvButtonIcon"> PROFILE
+          </button>
+          <div class="cvAccordionPanel" id="profilePanel">
+          </div>
+        </div>
+
+        <div class="cvAccordionItem">
+          <button class="cvAccordionButton">
+            <img src="images/work-experience.png" alt="" class="cvButtonIcon"> WORK EXPERIENCE
+          </button>
+          <div class="cvAccordionPanel" id="workExperiencePanel">
+          </div>
+        </div>
+        <div class="cvAccordionItem">
+          <button class="cvAccordionButton">
+            <img src="images/reference.png" alt="" class="cvButtonIcon"> REFERENCE
+          </button>
+          <div class="cvAccordionPanel" id="referencePanel">
+          </div>
+        </div>
+        <div class="cvAccordionItem">
+          <button class="cvAccordionButton">
+            <img src="images/certifications.png" alt="" class="cvButtonIcon"> CERTIFICATIONS
+          </button>
+          <div class="cvAccordionPanel" id="certificationsPanel">
+          </div>
+        </div>
+
+        <div class="cvAccordionItem">
+          <button class="cvAccordionButton">
+            <img src="images/projects.png" alt="" class="cvButtonIcon"> PROJECTS
+          </button>
+          <div class="cvAccordionPanel" id="projectsPanel">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./scripts/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+{
+  "name": "MURAD <span class='cvHighlight'>MUSTAFAZADƏ</span>",
+  "title": "STUDENT",
+  "contact": [
+    { "icon": "phone.png", "text": "+994 50 545 56 26" },
+    { "icon": "email.png", "text": "muradmustafayev62@gmail.com" },
+    { "icon": "location.png", "text": "Azerbaijan/Baku/Neftchiler" }
+  ],
+  "socialMedia": [
+    { "icon": "instagram.png", "text": "themustafazadeh" },
+    { "icon": "tik-tok.png", "text": "thecycber" },
+    { "icon": "github.png", "text": "muradmustafa09" }
+  ],
+  "education": [
+    { "period": "2013 - 2024", "school": "Yeni Ayrica Village Secondary School is named after Binadar Mammadov" },
+    { "period": "2024 - 2025", "school": "AzTU - Information Security" }
+  ],
+  "skills": ["Playing football", "Cooking and eating meals"],
+  "languages": ["Azerbaijani", "English", "Turkish"],
+  "profile": "A highly motivated and results-oriented professional with over 5 years of experience in project management, data analysis, and software development. Proven ability to lead teams, develop innovative solutions, and deliver high-quality results under tight deadlines. With a strong foundation in technology and business, I am passionate about leveraging my skills to drive growth and efficiency within dynamic work environments.",
+  "workExperience": [
+    {
+      "title": "Project Manager | XYZ Solutions",
+      "details": [
+        "Led a cross-functional team of 12 members in the development of a cloud-based SaaS product, increasing operational efficiency by 30%"
+      ]
+    },
+    {
+      "title": "Data Analyst | ABC Analytics",
+      "details": [
+        "Analyzed large data sets to identify trends and provide actionable insights for clients in the retail industry."
+      ]
+    }
+  ],
+  "reference": "I had the pleasure of working with [Your Name] for over 3 years at XYZ Solutions. As a Project Manager, [Your Name] displayed exceptional leadership skills, especially when managing high-profile projects. Their ability to handle client relationships, deliver projects under tight deadlines, and navigate complex challenges was invaluable. [Your Name] consistently demonstrated a keen understanding of both the technical and business aspects of our projects. I would highly recommend them for any leadership role in project management.",
+  "certifications": [
+    {
+      "name": "Certified ScrumMaster",
+      "description": "This certification demonstrates my understanding of Agile principles and Scrum practices. I gained hands-on experience in leading Scrum teams, facilitating Sprint planning, and delivering iterative results. I am well-versed in using Scrum to improve team collaboration, increase project transparency, and ensure timely product delivery. The certification also enabled me to develop skills in coaching teams to implement Scrum efficiently and improve overall project management."
+    },
+    {
+      "name": "Google Analytics Certified",
+      "description": "This certification has equipped me with the knowledge and practical skills to analyze website and app data. I am proficient in using Google Analytics to track and interpret key performance metrics, such as user behavior, conversion rates, and traffic sources. The certification provided in-depth insights into leveraging data for digital marketing strategies, improving SEO efforts, and enhancing user engagement."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Cloud-based SaaS Product Development",
+      "description": "Led the project to develop a cloud-based SaaS product that streamlined internal workflows for clients, increasing productivity by 30%."
+    },
+    {
+      "name": "Automated Data Reporting System",
+      "description": "Developed a system using Python to automate monthly reporting processes for clients, reducing time spent on data collection and reporting by 50%."
+    }
+  ]
+}

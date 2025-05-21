@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f2f2f2;
+
+  .editToggleBtn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #005aad;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    z-index: 999;
+    transition: background-color 0.3s;
+  }
+
+  .editToggleBtn:hover {
+    background-color: #033a6e;
+  }
+
+}
+
+.cvContainer {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 30px auto;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  .cvSidebar {
+    flex: 1;
+    min-width: 300px;
+    background-color: #005aad;
+    color: white;
+    padding: 20px;
+    border-radius: 15px 0 0 15px;
+
+    .cvProfilePicture {
+      display: block;
+      margin: 0 auto 20px auto;
+      width: 130px;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid white;
+    }
+
+    .cvLeftAccordion {
+      .cvAccordionItem {
+        margin-bottom: 15px;
+
+        .cvAccordionButton {
+          width: 100%;
+          padding: 12px 15px;
+          background-color: #004381;
+          color: white;
+          text-align: left;
+          border: none;
+          outline: none;
+          font-size: 15px;
+          font-weight: 600;
+          cursor: pointer;
+          transition: background-color 0.3s;
+          border-radius: 8px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          &:hover {
+            background-color: #1671c7;
+          }
+
+          .cvButtonIcon {
+            width: 18px;
+            height: 18px;
+            vertical-align: middle;
+          }
+        }
+
+        .cvAccordionPanel {
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+          padding: 0 15px;
+          background-color: #1671c7;
+          border-radius: 0 0 8px 8px;
+          font-size: 13px;
+          margin-top: 5px;
+
+          ul {
+            list-style-type: none;
+
+            li {
+              color: white;
+            }
+          }
+
+          p {
+            color: white;
+
+            .cvIcon {
+              width: 16px;
+              height: 16px;
+              margin-right: 8px;
+              vertical-align: middle;
+            }
+          }
+
+          &.active {
+            max-height: 500px !important;
+            padding: 15px 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .cvMainContent {
+    flex: 2;
+    padding: 30px;
+
+    h1 {
+      .cvHighlight {
+        color: #005aad;
+      }
+    }
+
+    .cvTitleLine {
+      margin: 10px 0 30px 0;
+      height: 3px;
+      background-color: #005aad;
+      border: none;
+      width: 100px;
+      margin-bottom: 50px;
+    }
+
+    .cvRightAccordion {
+      .cvAccordionItem {
+        margin-bottom: 15px;
+
+        .cvAccordionButton {
+          width: 100%;
+          padding: 12px 15px;
+          background-color: #004381;
+          color: white;
+          text-align: left;
+          border: none;
+          outline: none;
+          font-size: 15px;
+          font-weight: 600;
+          cursor: pointer;
+          transition: background-color 0.3s;
+          border-radius: 8px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          &:hover {
+            background-color: #1671c7;
+          }
+
+          .cvButtonIcon {
+            width: 18px;
+            height: 18px;
+            vertical-align: middle;
+          }
+        }
+
+        .cvAccordionPanel {
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+          padding: 0 15px;
+          background-color: #1671c7;
+          border-radius: 0 0 8px 8px;
+          font-size: 13px;
+          margin-top: 5px;
+
+          ul {
+            list-style-type: none;
+
+            li {
+              color: white;
+            }
+          }
+
+          p {
+            color: white;
+
+            .cvIcon {
+              width: 16px;
+              height: 16px;
+              margin-right: 8px;
+              vertical-align: middle;
+            }
+          }
+
+          &.active {
+            max-height: 500px !important;
+            padding: 15px 15px;
+          }
+        }
+      }
+    }
+
+    .cvInputGroup {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 20px;
+
+      label {
+        font-weight: 600;
+        color: #004381;
+        font-size: 14px;
+      }
+
+      input,
+      textarea,
+      select {
+        padding: 10px 15px;
+        border: 2px solid #005aad;
+        border-radius: 8px;
+        font-size: 14px;
+        outline: none;
+        transition: border-color 0.3s, box-shadow 0.3s;
+
+        &:focus {
+          border-color: #1671c7;
+          box-shadow: 0 0 5px rgba(22, 113, 199, 0.5);
+        }
+      }
+
+      .error {
+        color: red;
+        font-size: 12px;
+        margin-top: -5px;
+      }
+    }
+
+    .cvButtonGroup {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+
+      button {
+        padding: 12px 20px;
+        background-color: #005aad;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+
+        &:hover {
+          background-color: #033a6e;
+          transform: translateY(-2px);
+        }
+
+        &.secondary {
+          background-color: #1671c7;
+
+          &:hover {
+            background-color: #0f5aa1;
+          }
+        }
+
+        &.danger {
+          background-color: #e63946;
+
+          &:hover {
+            background-color: #c1273b;
+          }
+        }
+
+        &.disabled {
+          background-color: #ccc;
+          color: #666;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+}
+
+
+/* + Add button */
+.addBtn {
+  background-color: #005aad;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.addBtn:hover {
+  background-color: #024e95;
+}
+
+/* inputGroup container */
+.inputGroup {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* inputs inside inputGroup */
+.inputGroup input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Save (Add New) button */
+.inputGroup button {
+  background-color: #005aad;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.inputGroup button:hover {
+  background-color: #033a6e;
+}
